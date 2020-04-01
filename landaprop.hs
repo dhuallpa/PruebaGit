@@ -26,7 +26,7 @@ ubicadoEn barrios = any(estaEn propiedadesDeEjemplo) barrios
 estaEn prop lugar = elem lugar (map barrio prop)
 
 precioDep dep= precio dep 
-cumpleRango func x y = between x y (func casa)
+cumpleRango func a b = between a b (func casa)
 
 cumpleBusqueda :: Propiedad-> Busqueda -> Bool
 cumpleBusqueda dep busq  = map ($ dep) Bus
